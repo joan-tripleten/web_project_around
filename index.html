@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pages\index.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__logo">
+                <img class="header__vector" src="images\Vector.svg" alt="Logo Around The U.S.">
+                <div class="header__line"></div>
+        </header>
+        <main class="main">
+            <section class="profile">
+                <div class="profile__wrapper">
+                    <div class="profile__avatar">
+                        <img class="profile__image" src="images\JacquesCousteau.jpg" alt="Foto de perfil del usuario">
+                        <div class="profile__info">
+                            <div class="profile__user">
+                                <h1 class="profile__name">
+                                    Jacques Cousteau
+                                </h1>
+                               <button class="profile__edit">
+                                    <img class="profile__pencil" src="images\pencil.svg" alt="Ícono del botón editar">
+                                </button>
+                            </div>
+                            <h2 class="profile__about">
+                                Explorador
+                            </h2>
+                        </div>
+                    </div>
+                    <button class="profile__add">
+                        <h3 class="profile__plus">
+                            +
+                        </h3>
+                    </button>
+                </div>
+            </section>
+            <section class="elements">
+                <div class="elements__wrapper">
+                    <!-- Valle de Yosemite -->
+                    <div class="element">
+                        <img class="element__image" src="images\kirill-pershin-1088404-unsplash.jpg" alt="Fotografía del Valle de Yosemite">
+                        <div class="element__rectangle">
+                            <p class="element__text">
+                                Valle de Yosemite
+                            </p>
+                            <img class="element__heart" src="images\heart.svg" alt="Ícono de like">
+                        </div>                    
+                    </div>
+                    <!-- Lago Louise -->
+                    <div class="element">
+                        <img class="element__image" src="images\kirill-pershin-1404681-unsplash.jpg" alt="Fotografía del Lago Louise">
+                        <div class="element__rectangle">
+                            <p class="element__text">
+                                Lago Louise
+                            </p>
+                            <img class="element__heart" src="images\heart.svg" alt="Ícono de like">
+                        </div>                    
+                    </div>
+                    <!-- Montañas Calvas -->
+                    <div class="element">
+                        <img class="element__image" src="images\kirill-pershin-1556355-unsplash.jpg" alt="Fotografía de Montañas Calvas">
+                        <div class="element__rectangle">
+                            <p class="element__text">
+                                Montañas Calvas
+                            </p>
+                            <img class="element__heart" src="images\heart.svg" alt="Ícono de like">
+                        </div>                    
+                    </div>
+                    <!-- Latemar -->
+                    <div class="element">
+                        <img class="element__image" src="images\kirill-pershin-1404681-unsplash_2.jpg" alt="Fotografía de Latemar">
+                        <div class="element__rectangle">
+                            <p class="element__text">
+                                Latemar
+                            </p>
+                            <img class="element__heart" src="images\heart.svg" alt="Ícono de like">
+                        </div>                    
+                    </div>
+                    <!-- Vanois National Park-->
+                    <div class="element">
+                        <img class="element__image" src="images\kirill-pershin-1088404-unsplash.jpg" alt="Fotografía del Valle de Yosemite">
+                        <div class="element__rectangle">
+                            <p class="element__text">
+                                Vanois National Park
+                            </p>
+                            <img class="element__heart" src="images\heart.svg" alt="Ícono de like">
+                        </div>                    
+                    </div>
+                    <!-- Lago di Braies -->
+                    <div class="element">
+                        <img class="element__image" src="images\kirill-pershin-1088404-unsplash_2.jpg" alt="Fotografía del Lago di Braies">
+                        <div class="element__rectangle">
+                            <p class="element__text">
+                                Lago di Braies
+                            </p>
+                            <img class="element__heart" src="images\heart.svg" alt="Ícono de like">
+                        </div>                    
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <p class="footer__copy">
+                    &copy; 2025 Around The U.S.
+                </p>
+            </footer>
+        </main>
+        <section class="popup">
+            <div class="popup__container">
+                <div class ="popup__form">
+                    <h5 class="popup__cross">
+                    +
+                    </h5>
+                    <h4 class="popup__title">Editar perfil</h4>
+                    <form class="form__profile">
+                        <fieldset class="form__fieldset">
+                            <!-- <label class="form__label" for="name"></label> -->
+                            <input type="text" class="form__input" id="name" placeholder="Nombre">
+                            <input type="text" class="form__input" id="organisation-title" placeholder="Acerca de mí">
+                            <button type="submit" class="form__button">Guardar</button>
+                        </fieldset>                    
+                    </form>
+                </div>
+                
+                <div class="popup__overlay">
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="scripts\script.js"></script>
+</body>
+</html>

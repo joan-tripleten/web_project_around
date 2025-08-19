@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+}
+.footer__copy {
+    color: rgba(84, 84, 84, 1);
+    width: 880px;
+    margin: auto;
+    margin-top: 67px;
+    padding-bottom: 60px;
+    /* Tipografía */
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+@media screen and (max-width: 880px) {
+  .footer__copy {
+    max-width: calc(100% - 40px);
+  }
+}
