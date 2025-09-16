@@ -1,6 +1,6 @@
 # Tripleten web_project_around
 
-Nombre del proyecto: Sprint 7.
-Descripción: En este proyecto se utilizó por primera vez JavaScript de manera oficial.
-Planes de mejor del proyecto:  Quería agregar unas cosas más como inhabilitar el botón cuando no hubiera texto; lo haré en el siguiente cuando tenga más conocimientos.
+Nombre del proyecto: Sprint 8.
+Descripción: Aplicando conocimientos de no tan básicos de javascript.
+Planes de mejor del proyecto: Repasar todo otra vez.
 https://joan-tripleten.github.io/web_project_around

@@ -22,6 +22,9 @@
 }
 .profile__info {
   margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .profile__user {
   display: flex;
@@ -49,13 +52,13 @@
   background-color: black;
 }
 .profile__edit:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 .profile__pencil {
   width: 10px;
 }
 .profile__about {
-  margin-top: 16px;
+  /* margin-top: 16px; */
   /* Tipografía */
   font-family: Inter;
   font-weight: 400;
@@ -76,9 +79,8 @@
   height: 50px;
 }
 .profile__add:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
-
 @media screen and (max-width: 880px) {
   .profile__add {
     /* flex-grow: 1; */
@@ -88,7 +90,6 @@
     margin-top: 36px;
   }
 }
-
 @media screen and (max-width: 581px) {
   .profile__wrapper {
     /* flex-basis: 100%; */
@@ -105,7 +106,7 @@
   .profile__user {
     flex-basis: 100%;
     justify-content: center;
-    align-items:center
+    align-items: center;
   }
   .profile__name {
     font-family: Inter;
@@ -117,7 +118,6 @@
     text-align: center;
   }
   .profile__edit {
-
     margin-left: 10px;
     width: 18px;
     height: 18px;
