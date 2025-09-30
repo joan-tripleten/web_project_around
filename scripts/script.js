@@ -1,5 +1,4 @@
-// 1. Las seis tarjetas iniciales
-
+// 1. Inyección de tarjetas
 const initialCards = [
   {
     name: "Valle de Yosemite",
@@ -44,20 +43,24 @@ function addElement(i) {
   return element;
 }
 
-// 1.3 Bulce
+// 1.3 Bucle
 initialCards.forEach((i) => {
   const element = addElement(i);
   wrapper.append(element);
 });
 
-// popup (Edit Button)
+// Edit Button
 
 const edit = document.querySelector(".profile__edit");
 const popupEdit = document.querySelector(".popupEdit");
 const crossEdit = document.querySelector(".popup__crossEdit");
+// const nameInput = document.getElementById("name");
 
 function openEdit() {
   popupEdit.classList.toggle("popup_openedEdit");
+  editButton.classList.add("form__button-disabled");
+  // nameInput.value = "";
+  formEdit.reset();
 }
 
 function closeEdit() {
@@ -67,7 +70,7 @@ function closeEdit() {
 edit.addEventListener("click", openEdit);
 crossEdit.addEventListener("click", closeEdit);
 
-// 2. Formulario para añadir una tarjeta (Add Button)
+// Add Button
 
 const add = document.querySelector(".profile__add");
 const popupAdd = document.querySelector(".popupAdd");
@@ -75,6 +78,8 @@ const crossAdd = document.querySelector(".popup__crossAdd");
 
 function openAdd() {
   popupAdd.classList.toggle("popup_openedAdd");
+  addButon.classList.add("form__button-disabled");
+  formAdd.reset();
 }
 
 function closeAdd() {
@@ -92,9 +97,14 @@ outsideEdit.addEventListener("click", closeEdit);
 const outsideAdd = popupAdd.querySelector(".popup__overlay");
 outsideAdd.addEventListener("click", closeAdd);
 
-// document.addEventListener("keydown", function())
+document.addEventListener("keydown", (evt) => {
+  if (evt.key === "Escape") {
+    closeEdit();
+    closeAdd();
+  }
+});
 
-// save (Edit Save)
+// Edit Button Save
 
 const formEdit = document.querySelector(".formEdit");
 
@@ -118,7 +128,7 @@ function handleProfileFormSubmitEdit(evt) {
 
 formEdit.addEventListener("submit", handleProfileFormSubmitEdit);
 
-// Agregar tarjetas
+// Add Button Save
 
 const formAdd = document.querySelector(".formAdd");
 
@@ -150,8 +160,6 @@ function handleProfileFormSubmitAdd(evt) {
   newTrashConstant.addEventListener("click", () => {
     newTrashConstant.closest(".element").remove();
   });
-
-  // Function Update
 
   const newImgConstant = newElement.querySelector(".element__image");
 
@@ -186,7 +194,7 @@ trashConstant.forEach((i) => {
   });
 });
 
-// Img
+// Open Img
 
 const img = document.querySelectorAll(".element__image");
 const popupImg = document.querySelector(".popupImg");

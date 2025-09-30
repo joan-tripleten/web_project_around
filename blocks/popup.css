@@ -54,6 +54,10 @@
   padding: 0;
   z-index: inherit;
 }
+.form__label {
+  position: relative;
+  width: 358px;
+}
 .form__input {
   width: 100%;
   border: none;
@@ -89,6 +93,28 @@
 }
 .form__button:hover {
   opacity: 0.8;
+}
+.form__button-disabled {
+  background-color: transparent;
+  color: #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+.form__span {
+  color: red;
+  position: absolute;
+  width: inherit;
+  /* Tipografía */
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.form__input-error {
+  border-bottom: 1px solid rgba(255, 0, 0, 1);
 }
 .popup__cross {
   font-family: Inter;
